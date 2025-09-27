@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="daydream-project"
-run/main_scene="uid://rdckbt5ytn4m"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+run/main_scene="res://log.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+<<<<<<<HEADrun/main_scene="res://intro.tscn"
 
 [input]
 

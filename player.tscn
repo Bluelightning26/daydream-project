@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cqab41l5xetir"]
+[gd_scene load_steps=4 format=3 uid="uid://d0wao08elsp6s"]
 
-[ext_resource type="Script" uid="uid://bn47txjnooqmv" path="res://character_body_2d.gd" id="1_116tc"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_116tc"]
 [ext_resource type="Texture2D" uid="uid://ycoyygy3p26i" path="res://assets/Characters/Free Cow Sprites.png" id="1_l6sib"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f60up"]
