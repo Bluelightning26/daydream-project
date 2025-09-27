@@ -242,7 +242,7 @@ tile_map_data = PackedByteArray("AAD4//v/AAAAAAAAAAD4//z/AAAAAAEAAAD4//3/AAAAAAI
 tile_set = SubResource("TileSet_7a8ye")
 
 [node name="Node2D" parent="." instance=ExtResource("4_0a7ni")]
-position = Vector2(-37.00006, -87.00001)
+position = Vector2(-25, -29.000011)
 scale = Vector2(5, 5)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
