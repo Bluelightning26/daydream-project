@@ -1,0 +1,130 @@
+[gd_scene load_steps=17 format=3 uid="uid://br66kn2kgnn28"]
+
+[ext_resource type="Texture2D" uid="uid://d13rkwuawvmie" path="res://assets/Objects/fire/fire_column_medium_1.png" id="1_b152a"]
+[ext_resource type="Texture2D" uid="uid://clxmpa7fsrk3e" path="res://assets/Objects/fire/fire_column_medium_2.png" id="2_o772i"]
+[ext_resource type="Texture2D" uid="uid://x6jjdwwlu0et" path="res://assets/Objects/fire/fire_column_medium_3.png" id="3_s6uvo"]
+[ext_resource type="Texture2D" uid="uid://bsfcv2ffjnv16" path="res://assets/Objects/fire/fire_column_medium_4.png" id="4_nsqmp"]
+[ext_resource type="Texture2D" uid="uid://c2er04sxwwrb2" path="res://assets/Objects/fire/fire_column_medium_5.png" id="5_wpua1"]
+[ext_resource type="Texture2D" uid="uid://115xn1ijxhxu" path="res://assets/Objects/fire/fire_column_medium_6.png" id="6_hy16p"]
+[ext_resource type="Texture2D" uid="uid://du6g6onew010o" path="res://assets/Objects/fire/fire_column_medium_7.png" id="7_2872c"]
+[ext_resource type="Texture2D" uid="uid://cqol2xtvoqdm3" path="res://assets/Objects/fire/fire_column_medium_8.png" id="8_ts0it"]
+[ext_resource type="Texture2D" uid="uid://cmfkldb3tokpv" path="res://assets/Objects/fire/fire_column_medium_9.png" id="9_41tjh"]
+[ext_resource type="Texture2D" uid="uid://1xt38mddt3t3" path="res://assets/Objects/fire/fire_column_medium_10.png" id="10_kct82"]
+[ext_resource type="Texture2D" uid="uid://bamgjrfgopxej" path="res://assets/Objects/fire/fire_column_medium_11.png" id="11_k0kgj"]
+[ext_resource type="Texture2D" uid="uid://clw4024mfuinx" path="res://assets/Objects/fire/fire_column_medium_12.png" id="12_bvqrw"]
+[ext_resource type="Texture2D" uid="uid://18jepfwreiuf" path="res://assets/Objects/fire/fire_column_medium_13.png" id="13_avpid"]
+[ext_resource type="Texture2D" uid="uid://b68jbyb60n5hw" path="res://assets/Objects/fire/fire_column_medium_14.png" id="14_puc0n"]
+
+[sub_resource type="GDScript" id="GDScript_b152a"]
+script/source = "extends Node2D"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nyndv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_b152a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_o772i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_s6uvo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nsqmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wpua1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hy16p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2872c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ts0it")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_41tjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_kct82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_k0kgj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bvqrw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_avpid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_puc0n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="FireWave" type="Node2D"]
+script = SubResource("GDScript_b152a")
+
+[node name="fire" type="AnimatableBody2D" parent="."]
+position = Vector2(-1175, -127)
+scale = Vector2(2, 2)
+disable_mode = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="fire"]
+position = Vector2(1052, 318)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_nyndv")
+frame = 6
+
+[node name="fire2" type="AnimatableBody2D" parent="."]
+position = Vector2(-1128, -205)
+scale = Vector2(2, 2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="fire2"]
+position = Vector2(1054.99, 313.25)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_nyndv")
+frame_progress = 0.640781
+
+[node name="fire3" type="AnimatableBody2D" parent="."]
+position = Vector2(-1180, -285)
+scale = Vector2(2, 2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="fire3"]
+position = Vector2(1052, 318)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_nyndv")
+
+[node name="fire4" type="AnimatableBody2D" parent="."]
+position = Vector2(-1114, -371)
+scale = Vector2(2, 2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="fire4"]
+position = Vector2(1052, 318)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_nyndv")
+frame = 10
+
+[node name="fire5" type="AnimatableBody2D" parent="."]
+position = Vector2(-1186, -485)
+scale = Vector2(2, 2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="fire5"]
+position = Vector2(1052, 318)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_nyndv")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+position = Vector2(2, 5)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatableBody2D"]
+position = Vector2(973, 54)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_nyndv")
+frame = 3
